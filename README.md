@@ -1,4 +1,3 @@
-""\
 # README.md
 
 ## Rapsheet
@@ -22,10 +21,10 @@
 ## Usage
 
 ```bash
-rapsheetcli -f file1.csv file2.csv -o ./output
-rapsheetcli -d ./csv_dir -o ./output
-rapsheetcli -f data.csv -t template.xlsx -o ./output
-rapsheetcli -d ./csv_dir -u -o ./output
+rapsheet -f file1.csv file2.csv -o ./output
+rapsheet -d ./csv_dir -o ./output
+rapsheet -f data.csv -t template.xlsx -o ./output
+rapsheet -d ./csv_dir -u -o ./output
 ```
 
 ---
