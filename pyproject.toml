@@ -1,0 +1,29 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rapsheet"
+version = "3.4.0"
+description = "CSV to Excel Report Generator with template updating and formatting"
+authors = [
+    { name = "0CM", email = "0cml@binarybandits.org" }
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.6"
+dependencies = [
+    "pandas",
+    "openpyxl"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/0CM/rapsheet"
+"Documentation" = "https://github.com/yourusername/rapsheet/wiki"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+rapsheet = "rapsheet.rapsheet:main"
